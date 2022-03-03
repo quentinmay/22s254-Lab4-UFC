@@ -23,10 +23,45 @@
 //   Purpose: The purpose this program is to establish a common header that will be re-used in all other files of our project. 
 //
 // This file
-//   Name: commonHeader.cpp                                                              
+//   Name: functionImplementation.cpp                                                              
 //   Language: C++                                                                
 //   Syntax: ---
-//   Assemble: g++ commonHeader.cpp
-//   Purpose: To establish a common header that will be re-used in all other files of our project.
+//   Assemble: g++ functionImplementation.cpp
+//   Purpose: Defines the functions to be used within main.cpp.
 //
 //***** BEGIN CODE AREA ********************************************************************************************************
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+string openFile(string filePath) {
+    ofstream readMeFile;
+    string data;
+    readMeFile.open(filePath);
+    if (readMeFile.is_open())
+    {
+    while ( getline (readMeFile,line) )
+    {
+        data += line;
+    }
+    myfile.close();
+    }
+    return data;
+}
+
+string getMemberNames(string readMeData) {
+    string memberNames;
+    for (string line of readMeData) {
+        if (line contains "* ") {
+            memberNames += "\n" + line;
+        }
+    }
+    return memberNames;
+}
+
+int outputNames(string memberNames) {
+    for (string line of memberNames) {
+        cout << line << endl;
+    }
+    return 0;
+}

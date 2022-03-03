@@ -37,9 +37,11 @@ include iostream
 include fstream 
 include String
 
-// Function to open the file and call readFile() to scan and print
-openFile()
+// Function to open the file with the file as a param
+String openFile(fstream& someFile)
 
-// Takes in a txt file as a parameter and scans it (in this case a README)
-// and prints out the contents found
-readFile(fstream& someFile)
+// Gets member names from text retrieved from file
+getMemberNames(String text)
+
+//Printing out member names based on an array of member names
+outputMemberNames(string[] names)

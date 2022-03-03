@@ -30,3 +30,15 @@
 //   Purpose: To establish a common header that will be re-used in all other files of our project.
 //
 //***** BEGIN CODE AREA ********************************************************************************************************
+
+// Including necessary libraries
+include iostream
+include fstream 
+include String
+
+// Function to open the file and call readFile() to scan and print
+openFile()
+
+// Takes in a txt file as a parameter and scans it (in this case a README)
+// and prints out the contents found
+readFile(fstream& someFile)

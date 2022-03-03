@@ -20,13 +20,26 @@
 //   Program name: Common Header
 //   Date program began: 2022-Mar-2
 //   Date of last update: 2020-Mar-2
-//   Purpose: The purpose this program is to establish a common header that will be re-used in all other files of our project. 
+//   Purpose: The purpose of this program is to establish a common header that will be re-used in all other files of our project. 
 //
 // This file
 //   Name: commonHeader.cpp                                                              
 //   Language: C++                                                                
 //   Syntax: ---
 //   Assemble: g++ commonHeader.cpp
-//   Purpose: To establish a common header that will be re-used in all other files of our project.
+//   Purpose: To estbalish the functions being used in this program. In this case, functions to open the README and to scan and print the
+//            contents of the file
 //
 //***** BEGIN CODE AREA ********************************************************************************************************
+
+// Including necessary libraries
+include iostream
+include fstream 
+include String
+
+// Function to open the file and call readFile() to scan and print
+openFile()
+
+// Takes in a txt file as a parameter and scans it (in this case a README)
+// and prints out the contents found
+readFile(fstream& someFile)

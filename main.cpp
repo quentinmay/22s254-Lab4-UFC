@@ -34,14 +34,15 @@
 // include the previous files and their respective libraries
 #include "header.cpp"
 #include "functionImplementation.cpp"
+#include <string>
 
 using namespace std;
 
 // main function
 int main() {
-    ifstream fin;
-    openFile(readme);
-    readFile(fin, readme);
+    string readMeText = openFile("readme.md");
+    string memberNames = getMemberNames(readMeText);
+    outputNames(memberNames);    
 
     return 0;
 }

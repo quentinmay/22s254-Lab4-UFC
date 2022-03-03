@@ -17,16 +17,31 @@
 //******************************************************************************************************************************
 //
 // Program information
-//   Program name: Common Header
+//   Program name: main
 //   Date program began: 2022-Mar-2
 //   Date of last update: 2020-Mar-2
-//   Purpose: The purpose this program is to establish a common header that will be re-used in all other files of our project. 
+//   Purpose: The purpose this program is to read in names text from readme.txt and then output it using standard output 
 //
 // This file
-//   Name: commonHeader.cpp                                                              
+//   Name: main.cpp                                                              
 //   Language: C++                                                                
 //   Syntax: ---
-//   Assemble: g++ commonHeader.cpp
-//   Purpose: To establish a common header that will be re-used in all other files of our project.
+//   Assemble: g++ main.cpp functionImplementation.cpp header.cpp
+//   Purpose: to read in names text from readme.txt and then output it using standard output
 //
 //***** BEGIN CODE AREA ********************************************************************************************************
+
+// include the previous files and their respective libraries
+#include "header.cpp"
+#include "functionImplementation.cpp"
+
+using namespace std;
+
+// main function
+int main() {
+    ifstream fin;
+    openFile(readme);
+    readFile(fin, readme);
+
+    return 0;
+}
